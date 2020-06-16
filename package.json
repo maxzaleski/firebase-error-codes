@@ -24,7 +24,8 @@
     "url": "https://github.com/maxzaleski/firebase-error-codes/issues"
   },
   "homepage": "https://github.com/maxzaleski/firebase-error-codes#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "prettier": "^2.0.5"
   }
 }
