@@ -1,0 +1,29 @@
+node_modules/
+yarn.lock
+
+# Log files
+logs/
+*.log
+
+# Authentication
+deploy/
+
+# Miscellaneous
+.tmp/
+.vscode/
+docs/
+
+# NPM ignore
+.eslintrc.js
+.gitattributes
+.gitignore
+.travis.yml
+.github/
+test/
+src/
+tsconfig.json
+tslint.json
+.eslintrc
+.npmrc
+.npmignore
+webpack.config.js

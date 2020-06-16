@@ -1,0 +1,30 @@
+{
+  "name": "firebase-error-codes",
+  "version": "1.0.0",
+  "description": "collection of firebase-admin-sdk error codes",
+  "main": "lib/index.js",
+  "types": "./typings/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxzaleski/firebase-error-codes.git"
+  },
+  "keywords": [
+    "firebase-error-codes",
+    "firebase"
+  ],
+  "author": "Maximilien Zaleski",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/maxzaleski/firebase-error-codes/issues"
+  },
+  "homepage": "https://github.com/maxzaleski/firebase-error-codes#readme",
+  "dependencies": {
+    "prettier": "^2.0.5"
+  }
+}
