@@ -26,4 +26,5 @@ tslint.json
 .eslintrc
 .npmrc
 .npmignore
+.prettierrc
 webpack.config.js
