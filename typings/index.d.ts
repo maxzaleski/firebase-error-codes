@@ -298,5 +298,10 @@ declare module 'firebase-error-codes' {
      * Whitelist the domain in the Firebase Console.
      */
     unauthorizedContinueURI = 'auth/unauthorized-continue-uri',
+
+    /**
+     * There is no existing user record corresponding to the provided identifier.
+     */
+    userNotFound = 'auth/user-not-found',
   }
 }
