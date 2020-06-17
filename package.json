@@ -1,6 +1,6 @@
 {
   "name": "firebase-error-codes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "collection of firebase-admin-sdk error codes",
   "main": "lib/index.js",
   "types": "./typings/index.d.ts",

@@ -254,12 +254,6 @@ declare module 'firebase-error-codes' {
     missingUID = 'auth/missing-uid',
 
     /**
-     * The provided sign provider is disabled for your Firebase project.
-     * Enable it from the Sign Method section of the Firebase console.
-     */
-    operationNotAllowed = 'auth/operation-not-allowed',
-
-    /**
      * The provided phoneNumber is already in use by an existing user.
      * Each user must have a unique phoneNumber.
      */
