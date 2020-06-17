@@ -1,4 +1,4 @@
-// Type definitions for firebase-error-core 1.0.0
+// Type definitions for firebase-error-core 1.1.0
 // Project: https://github.com/maxzaleski/firebase-error-codes
 // Definitions by: Maximilien Zaleski <https://github.com/maxzaleski>
 
@@ -6,7 +6,9 @@ declare module 'firebase-error-codes' {
   /**
    * Authentication error codes
    *
-   * Docs: https://firebase.google.com/docs/auth/admin/errors
+   * Docs:
+   *  - https://firebase.google.com/docs/auth/admin/errors
+   *  - https://firebase.google.com/docs/reference/js/firebase.auth.Error
    */
   const enum auth {
     /**
@@ -303,5 +305,91 @@ declare module 'firebase-error-codes' {
      * There is no existing user record corresponding to the provided identifier.
      */
     userNotFound = 'auth/user-not-found',
+
+    // ---
+
+    /**
+     * Thrown if the instance of FirebaseApp has been deleted.
+     */
+    appDeleted = 'auth/app-deleted',
+
+    /**
+     * Thrown if the app identified by the domain where it's hosted, is not
+     * authorized to use Firebase Authentication with the provided API key.
+     * Review your key configuration in the Google API console.
+     */
+    appNotAuthorized = 'auth/app-not-authorized',
+
+    /**
+     * Thrown if a method is called with incorrect arguments.
+     */
+    argumentError = 'auth/argument-error',
+
+    /**
+     * Thrown if the provided API key is invalid. Please check that you have
+     * copied it correctly from the Firebase Console.
+     */
+    invalidApiKey = 'auth/invalid-api-key',
+
+    /**
+     * Thrown if the user's credential is no longer valid.
+     * The user must sign in again.
+     */
+    invalidUserToken = 'auth/invalid-user-token',
+
+    /**
+     * Thrown if the tenant ID provided is invalid. */
+    invalidTenantId = 'auth/invalid-tenant-id',
+
+    /**
+     * Thrown if a network error (such as timeout, interrupted connection or
+     * unreachable host) has occurred.
+     */
+    networkRequestFailed = 'auth/network-request-failed',
+
+    /**
+     * Thrown if you have not enabled the provider in the Firebase Console.
+     * Go to the Firebase Console for your project, in the Auth section and the
+     * Sign in Method tab and configure the provider.
+     */
+    operationNotAllowed = 'auth/operation-not-allowed',
+
+    /**
+     * Thrown if the user's last sign-in time does not meet the security threshold.
+     * Use firebase.User.reauthenticateWithCredential to resolve.
+     * This does not apply if the user is anonymous.
+     */
+    requiresRecentLogin = 'auth/requires-recent-login',
+
+    /**
+     * Thrown if requests are blocked from a device due to unusual activity.
+     * Trying again after some delay would unblock.
+     */
+    tooManyRequests = 'auth/too-many-requests',
+
+    /**
+     * Thrown if the app domain is not authorized for OAuth operations for your
+     * Firebase project. Edit the list of authorized domains from the Firebase console.
+     */
+    unauthorizedDomain = 'auth/unauthorized-domain',
+
+    /**
+     * Thrown if the user account has been disabled by an administrator.
+     * Accounts can be enabled or disabled in the Firebase Console,
+     * the Auth section and Users subsection.
+     */
+    userDisabled = 'auth/user-disabled',
+
+    /**
+     * Thrown if the user's credential has expired. This could also be thrown
+     * if a user has been deleted. Prompting the user to sign in again should
+     * resolve this for either case.
+     */
+    userTokenExpired = 'auth/user-token-expired',
+
+    /**
+     * Thrown if the browser does not support web storage or if the user disables them.
+     */
+    webStorageUnsupported = 'auth/web-storage-unsupported',
   }
 }

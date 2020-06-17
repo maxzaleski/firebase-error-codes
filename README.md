@@ -20,7 +20,9 @@ import * as firebaseErrorCodes from 'firebase-error-codes');
 
 ## Coverage
 
-- [authentication](https://firebase.google.com/docs/auth/admin/errors), 16 June 2020
+- [authentication]
+  - https://firebase.google.com/docs/auth/admin/errors, 16 June 2020
+  - https://firebase.google.com/docs/reference/js/firebase.auth.Error, 17 June 2020
 
 ## License
 
