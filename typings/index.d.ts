@@ -332,7 +332,8 @@ declare module 'firebase-error-codes' {
     invalidUserToken = 'auth/invalid-user-token',
 
     /**
-     * Thrown if the tenant ID provided is invalid. */
+     * Thrown if the tenant ID provided is invalid.
+     */
     invalidTenantId = 'auth/invalid-tenant-id',
 
     /**
@@ -385,5 +386,104 @@ declare module 'firebase-error-codes' {
      * Thrown if the browser does not support web storage or if the user disables them.
      */
     webStorageUnsupported = 'auth/web-storage-unsupported',
+  }
+
+  /**
+   * Storage error codes
+   *
+   * Docs:
+   *  - https://firebase.google.com/docs/storage/web/handle-errors
+   */
+  const enum Storage {
+    /**
+     * An unknown error occurred.
+     */
+    unknown = 'storage/unknown',
+
+    /**
+     * No object exists at the desired reference.
+     */
+    objectNotFound = 'storage/objectNotFound',
+
+    /**
+     * No bucket is configured for Cloud Storage
+     */
+    bucketNotFound = 'storage/bucketNotFound',
+
+    /**
+     * No project is configured for Cloud Storage
+     */
+    projectNotFound = 'storage/projectNotFound',
+
+    /**
+     * Quota on your Cloud Storage bucket has been exceeded.
+     * If you're on the free tier, upgrade to a paid plan.
+     * If you're on a paid plan, reach out to Firebase support.
+     */
+    quotaExceeded = 'storage/quota-exceeded',
+
+    /**
+     * User is unauthenticated, please authenticate and try again.
+     */
+    unauthenticated = 'storage/unauthenticated',
+
+    /**
+     * User is not authorized to perform the desired action,
+     * check your security rules to ensure they are correct.
+     */
+    unauthorized = 'storage/unauthorized',
+
+    /**
+     * The maximum time limit on an operation (upload, download, delete, etc.)
+     * has been excceded. Try uploading again.
+     */
+    retryLimitExceeded = 'storage/retry-limit-exceeded',
+
+    /**
+     * File on the client does not match the checksum of the file received by the server.
+     * Try uploading again.
+     */
+    invalidChecksum = 'storage/invalid-checksum',
+
+    /**
+     * User canceled the operation.
+     */
+    canceled = 'storage/canceled',
+
+    /**
+     * Invalid event name provided.
+     * Must be one of [`running`, `progress`, `pause`]
+     */
+    invalidEventName = 'storage/invalid-event-name',
+
+    /**
+     * Invalid URL provided to refFromURL().
+     * Must be of the form: gs://bucket/object or
+     * https://firebasestorage.googleapis.com/v0/b/bucket/o/object?token=<TOKEN>
+     */
+    invalidURL = 'storage/invalid-url',
+
+    /**
+     * The argument passed to put() must be `File`, `Blob`, or `UInt8` Array.
+     * The argument passed to putString() must be a raw, `Base64`, or `Base64URL` string.
+     */
+    invalidArgument = 'storage/invalid-argument',
+
+    /**
+     * No bucket has been set in your config's storageBucket property.
+     */
+    noDefaultBucket = 'storage/no-default-bucket',
+
+    /**
+     * Commonly occurs when the local file has changed (deleted, saved again, etc.).
+     * Try uploading again after verifying that the file hasn't changed.
+     */
+    cannotSliceBlob = 'storage/cannot-slice-blob',
+
+    /**
+     * File on the client does not match the size of the file recieved by the server.
+     * Try uploading again.
+     */
+    serverFileWrongSize = 'storage/server-file-wrong-size',
   }
 }

@@ -24,6 +24,9 @@ import * as firebaseErrorCodes from 'firebase-error-codes');
   - https://firebase.google.com/docs/auth/admin/errors, 16 June 2020
   - https://firebase.google.com/docs/reference/js/firebase.auth.Error, 17 June 2020
 
+- [storage]
+  - https://firebase.google.com/docs/storage/web/handle-errors, 21 June 2020
+
 ## License
 
 [Apache License](LICENSE)
