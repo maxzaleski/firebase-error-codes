@@ -1,6 +1,6 @@
-// Type definitions for firebase-error-core 1.1.0
-// Project: https://github.com/maxzaleski/firebase-error-codes
-// Definitions by: Maximilien Zaleski <https://github.com/maxzaleski>
+// Type definitions for firebase-error-core 1.1.0 Project:
+// https://github.com/maxzaleski/firebase-error-codes Definitions by: Maximilien
+// Zaleski <https://github.com/maxzaleski>
 
 declare module 'firebase-error-codes' {
   /**
@@ -34,29 +34,30 @@ declare module 'firebase-error-codes' {
     idTokenRevoked = 'auth/idToken-revoked',
 
     /**
-     * The credential used to initialize the Admin SDK has insufficient permission
-     * to access the requested Authentication resource. Refer to Set up a Firebase
-     * project for documentation on how to generate a credential with appropriate
-     * permissions and use it to authenticate the Admin SDKs.
+     * The credential used to initialize the Admin SDK has insufficient
+     * permission to access the requested Authentication resource. Refer to Set
+     * up a Firebase project for documentation on how to generate a credential
+     * with appropriate permissions and use it to authenticate the Admin SDKs.
      */
     insufficientPermission = 'auth/insufficient-permission',
 
     /**
      * The Authentication server encountered an unexpected error while trying to
      * process the request. The error message should contain the response from
-     * the Authentication server containing additional information.
-     * If the error persists, please report the problem to our Bug Report support channel.
+     * the Authentication server containing additional information. If the error
+     * persists, please report the problem to our Bug Report support channel.
      */
     internalError = 'auth/internal-error',
 
     /**
-     * An invalid argument was provided to an Authentication method.
-     * The error message should contain additional information.
+     * An invalid argument was provided to an Authentication method. The error
+     * message should contain additional information.
      */
     invalidArgument = 'auth/invalid-argument',
 
     /**
-     * The custom claim attributes provided to setCustomUserClaims() are invalid.
+     * The custom claim attributes provided to setCustomUserClaims() are
+     * invalid.
      */
     invalidClaims = 'auth/invalid-claims',
 
@@ -74,21 +75,21 @@ declare module 'firebase-error-codes' {
      * The credential used to authenticate the Admin SDKs cannot be used to
      * perform the desired action. Certain Authentication methods such as
      * createCustomToken() and verifyIdToken() require the SDK to be initialized
-     * with a certificate credential as opposed to a refresh token or Application
-     * Default credential. See Initialize the SDK for documentation on how to
-     * authenticate the Admin SDKs with a certificate credential.
+     * with a certificate credential as opposed to a refresh token or
+     * Application Default credential. See Initialize the SDK for documentation
+     * on how to authenticate the Admin SDKs with a certificate credential.
      */
     invalidCredential = 'auth/invalid-credential',
 
     /**
-     * The provided value for the disabled user property is invalid.
-     * It must be a boolean.
+     * The provided value for the disabled user property is invalid. It must be
+     * a boolean.
      */
     invalidDisabledField = 'auth/invalid-disabled-field',
 
     /**
-     * The provided value for the displayName user property is invalid.
-     * It must be a non string.
+     * The provided value for the displayName user property is invalid. It must
+     * be a non string.
      */
     invalidDisplayName = 'auth/invalid-display-name',
 
@@ -105,8 +106,8 @@ declare module 'firebase-error-codes' {
     invalidEmail = 'auth/invalid-email',
 
     /**
-     * The provided value for the emailVerified user property is invalid.
-     * It must be a boolean.
+     * The provided value for the emailVerified user property is invalid. It
+     * must be a boolean.
      */
     invalidEailVerified = 'auth/invalid-email-verified',
 
@@ -162,14 +163,14 @@ declare module 'firebase-error-codes' {
     invalidLastSignInTime = 'auth/invalid-last-sign-in-time',
 
     /**
-     * The provided next page token in listUsers() is invalid.
-     * It must be a valid non string.
+     * The provided next page token in listUsers() is invalid. It must be a
+     * valid non string.
      */
     invalidPageToken = 'auth/invalid-page-token',
 
     /**
-     * The provided value for the password user property is invalid.
-     * It must be a string with at least six characters.
+     * The provided value for the password user property is invalid. It must be
+     * a string with at least six characters.
      */
     invalidPassword = 'auth/invalid-password',
 
@@ -184,14 +185,14 @@ declare module 'firebase-error-codes' {
     invalidPasswordSalt = 'auth/invalid-password-salt',
 
     /**
-     * The provided value for the phoneNumber is invalid.
-     * It must be a non E.164 standard compliant identifier string.
+     * The provided value for the phoneNumber is invalid. It must be a non E.164
+     * standard compliant identifier string.
      */
     invalidPhoneNumber = 'auth/invalid-phone-number',
 
     /**
-     * The provided value for the photoURL user property is invalid.
-     * It must be a string URL.
+     * The provided value for the photoURL user property is invalid. It must be
+     * a string URL.
      */
     invalidPhotoUrl = 'auth/invalid-photo-url',
 
@@ -227,8 +228,8 @@ declare module 'firebase-error-codes' {
     maximumUserCountExceeded = 'auth/maximum-user-count-exceeded',
 
     /**
-     * An Android Package Name must be provided if the Android App is
-     * required to be installed.
+     * An Android Package Name must be provided if the Android App is required
+     * to be installed.
      */
     missingAndroidPkgName = 'auth/missing-android-pkg-name',
 
@@ -238,8 +239,8 @@ declare module 'firebase-error-codes' {
     missingContinueURI = 'auth/missing-continue-uri',
 
     /**
-     * Importing users with password hashes requires that the hashing
-     * algorithm and its parameters be provided.
+     * Importing users with password hashes requires that the hashing algorithm
+     * and its parameters be provided.
      */
     missingHashAlgorithm = 'auth/missing-hash-algorithm',
 
@@ -254,22 +255,23 @@ declare module 'firebase-error-codes' {
     missingUID = 'auth/missing-uid',
 
     /**
-     * The provided phoneNumber is already in use by an existing user.
-     * Each user must have a unique phoneNumber.
+     * The provided phoneNumber is already in use by an existing user. Each user
+     * must have a unique phoneNumber.
      */
     phoneNumberAlreadyExists = 'auth/phone-number-already-exists',
 
     /**
      * No Firebase project was found for the credential used to initialize the
      * Admin SDKs. Refer to Set up a Firebase project for documentation on how
-     * to generate a credential for your project and use it to authenticate the Admin SDKs.
+     * to generate a credential for your project and use it to authenticate the
+     * Admin SDKs.
      */
     projectNotFound = 'auth/project-not-found',
 
     /**
-     * One or more custom user claims provided to setCustomUserClaims() are reserved.
-     * For example, OIDC specific claims such as (sub, iat, iss, exp, aud, auth_time, etc)
-     * should not be used as keys for custom claims.
+     * One or more custom user claims provided to setCustomUserClaims() are
+     * reserved. For example, OIDC specific claims such as (sub, iat, iss, exp,
+     * aud, auth_time, etc) should not be used as keys for custom claims.
      */
     reservedClaims = 'auth/reserved-claims',
 
@@ -284,19 +286,20 @@ declare module 'firebase-error-codes' {
     sessionCookieRevoked = 'auth/session-cookie-revoked',
 
     /**
-     * The provided uid is already in use by an existing user.
-     * Each user must have a unique uid.
+     * The provided uid is already in use by an existing user. Each user must
+     * have a unique uid.
      */
     uidAlreadyExists = 'auth/uid-already-exists',
 
     /**
-     * The domain of the continue URL is not whitelisted.
-     * Whitelist the domain in the Firebase Console.
+     * The domain of the continue URL is not whitelisted. Whitelist the domain
+     * in the Firebase Console.
      */
     unauthorizedContinueURI = 'auth/unauthorized-continue-uri',
 
     /**
-     * There is no existing user record corresponding to the provided identifier.
+     * There is no existing user record corresponding to the provided
+     * identifier.
      */
     userNotFound = 'auth/user-not-found',
 
@@ -326,8 +329,8 @@ declare module 'firebase-error-codes' {
     invalidApiKey = 'auth/invalid-api-key',
 
     /**
-     * Thrown if the user's credential is no longer valid.
-     * The user must sign in again.
+     * Thrown if the user's credential is no longer valid. The user must sign in
+     * again.
      */
     invalidUserToken = 'auth/invalid-user-token',
 
@@ -343,15 +346,15 @@ declare module 'firebase-error-codes' {
     networkRequestFailed = 'auth/network-request-failed',
 
     /**
-     * Thrown if you have not enabled the provider in the Firebase Console.
-     * Go to the Firebase Console for your project, in the Auth section and the
+     * Thrown if you have not enabled the provider in the Firebase Console. Go
+     * to the Firebase Console for your project, in the Auth section and the
      * Sign in Method tab and configure the provider.
      */
     operationNotAllowed = 'auth/operation-not-allowed',
 
     /**
-     * Thrown if the user's last sign-in time does not meet the security threshold.
-     * Use firebase.User.reauthenticateWithCredential to resolve.
+     * Thrown if the user's last sign-in time does not meet the security
+     * threshold. Use firebase.User.reauthenticateWithCredential to resolve.
      * This does not apply if the user is anonymous.
      */
     requiresRecentLogin = 'auth/requires-recent-login',
@@ -364,26 +367,28 @@ declare module 'firebase-error-codes' {
 
     /**
      * Thrown if the app domain is not authorized for OAuth operations for your
-     * Firebase project. Edit the list of authorized domains from the Firebase console.
+     * Firebase project. Edit the list of authorized domains from the Firebase
+     * console.
      */
     unauthorizedDomain = 'auth/unauthorized-domain',
 
     /**
      * Thrown if the user account has been disabled by an administrator.
-     * Accounts can be enabled or disabled in the Firebase Console,
-     * the Auth section and Users subsection.
+     * Accounts can be enabled or disabled in the Firebase Console, the Auth
+     * section and Users subsection.
      */
     userDisabled = 'auth/user-disabled',
 
     /**
-     * Thrown if the user's credential has expired. This could also be thrown
-     * if a user has been deleted. Prompting the user to sign in again should
+     * Thrown if the user's credential has expired. This could also be thrown if
+     * a user has been deleted. Prompting the user to sign in again should
      * resolve this for either case.
      */
     userTokenExpired = 'auth/user-token-expired',
 
     /**
-     * Thrown if the browser does not support web storage or if the user disables them.
+     * Thrown if the browser does not support web storage or if the user
+     * disables them.
      */
     webStorageUnsupported = 'auth/web-storage-unsupported',
   }
@@ -416,9 +421,9 @@ declare module 'firebase-error-codes' {
     projectNotFound = 'storage/projectNotFound',
 
     /**
-     * Quota on your Cloud Storage bucket has been exceeded.
-     * If you're on the free tier, upgrade to a paid plan.
-     * If you're on a paid plan, reach out to Firebase support.
+     * Quota on your Cloud Storage bucket has been exceeded. If you're on the
+     * free tier, upgrade to a paid plan. If you're on a paid plan, reach out to
+     * Firebase support.
      */
     quotaExceeded = 'storage/quota-exceeded',
 
@@ -428,8 +433,8 @@ declare module 'firebase-error-codes' {
     unauthenticated = 'storage/unauthenticated',
 
     /**
-     * User is not authorized to perform the desired action,
-     * check your security rules to ensure they are correct.
+     * User is not authorized to perform the desired action, check your security
+     * rules to ensure they are correct.
      */
     unauthorized = 'storage/unauthorized',
 
@@ -440,8 +445,8 @@ declare module 'firebase-error-codes' {
     retryLimitExceeded = 'storage/retry-limit-exceeded',
 
     /**
-     * File on the client does not match the checksum of the file received by the server.
-     * Try uploading again.
+     * File on the client does not match the checksum of the file received by
+     * the server. Try uploading again.
      */
     invalidChecksum = 'storage/invalid-checksum',
 
@@ -451,21 +456,22 @@ declare module 'firebase-error-codes' {
     canceled = 'storage/canceled',
 
     /**
-     * Invalid event name provided.
-     * Must be one of [`running`, `progress`, `pause`]
+     * Invalid event name provided. Must be one of [`running`, `progress`,
+     * `pause`]
      */
     invalidEventName = 'storage/invalid-event-name',
 
     /**
-     * Invalid URL provided to refFromURL().
-     * Must be of the form: gs://bucket/object or
+     * Invalid URL provided to refFromURL(). Must be of the form:
+     * gs://bucket/object or
      * https://firebasestorage.googleapis.com/v0/b/bucket/o/object?token=<TOKEN>
      */
     invalidURL = 'storage/invalid-url',
 
     /**
      * The argument passed to put() must be `File`, `Blob`, or `UInt8` Array.
-     * The argument passed to putString() must be a raw, `Base64`, or `Base64URL` string.
+     * The argument passed to putString() must be a raw, `Base64`, or
+     * `Base64URL` string.
      */
     invalidArgument = 'storage/invalid-argument',
 
@@ -475,14 +481,14 @@ declare module 'firebase-error-codes' {
     noDefaultBucket = 'storage/no-default-bucket',
 
     /**
-     * Commonly occurs when the local file has changed (deleted, saved again, etc.).
-     * Try uploading again after verifying that the file hasn't changed.
+     * Commonly occurs when the local file has changed (deleted, saved again,
+     * etc.). Try uploading again after verifying that the file hasn't changed.
      */
     cannotSliceBlob = 'storage/cannot-slice-blob',
 
     /**
-     * File on the client does not match the size of the file recieved by the server.
-     * Try uploading again.
+     * File on the client does not match the size of the file recieved by the
+     * server. Try uploading again.
      */
     serverFileWrongSize = 'storage/server-file-wrong-size',
   }
