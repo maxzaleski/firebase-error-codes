@@ -1,8 +1,8 @@
 module.export = {
   unknown: 'storage/unknown',
-  objectNotFound: 'storage/objectNotFound',
-  bucketNotFound: 'storage/bucketNotFound',
-  projectNotFound: 'storage/projectNotFound',
+  objectNotFound: 'storage/object-not-found',
+  bucketNotFound: 'storage/bucket-not-found',
+  projectNotFound: 'storage/project-not-found',
   quotaExceeded: 'storage/quota-exceeded',
   unauthenticated: 'storage/unauthenticated',
   unauthorized: 'storage/unauthorized',

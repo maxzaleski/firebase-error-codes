@@ -8,14 +8,22 @@ Collection of firebase-admin-sdk error codes.
 npm install firebase-error-codes
 ```
 
+```
+yarn add firebase-error-codes
+```
+
 ## Usage
 
 ```js
 const firebaseErrorCodes = require('firebase-error-codes');
 ```
 
-```js
-import * as firebaseErrorCodes from 'firebase-error-codes');
+```ts
+import * as firebaseErrorCodes from 'firebase-error-codes';
+```
+
+```ts
+import { Auth, Storage } from 'firebase-error-codes';
 ```
 
 ## Coverage
