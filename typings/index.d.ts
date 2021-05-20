@@ -1,5 +1,5 @@
-// Type definitions for firebase-error-core 1.1.0 Project: https://github.com/maxzaleski/firebase-error-codes
-// Definitions by: Maximilien Zaleski <https://github.com/maxzaleski>
+// Type definitions for firebase-error-core 1.2.2 Project: https://github.com/maxzaleski/firebase-error-codes
+// Definitions by: Max Zaleski <https://github.com/maxzaleski>
 
 declare module 'firebase-error-codes' {
   /**
